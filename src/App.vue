@@ -34,12 +34,12 @@
                 <el-icon><Box /></el-icon>
                 <span>网络组件</span>
               </el-menu-item>
-              <el-menu-item>
+              <el-menu-item index="/operation/protocol">
                 <el-icon><Connection /></el-icon>
                 <span>协议管理</span>
               </el-menu-item>
             </el-sub-menu>
-            <el-sub-menu index="rule">
+            <el-sub-menu>
               <template #title>
                 <el-icon><Setting /></el-icon>
                 <span>规则引擎</span>
@@ -73,6 +73,14 @@ export default {
 </script>
 
 <style>
+
+html, body, #app, .el-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .el-menu-vertical-demo {
   width: 200px;
 }
@@ -84,4 +92,8 @@ export default {
 .el-header {
   height: 60px;
 }
+.el-main {
+  background-color: #f0f2f5;
+}
+
 </style>
